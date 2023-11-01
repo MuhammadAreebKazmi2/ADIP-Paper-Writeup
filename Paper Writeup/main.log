@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  24 OCT 2023 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  29 OCT 2023 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Habib University/(ADIP) Applied Digital Image Processing/Project/Paper Writeup/main.tex"
-(d:/Habib University/(ADIP) Applied Digital Image Processing/Project/Paper Writeup/main.tex
+**"d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex"
+(d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
 (D:\Software setups\MikTeX\tex/latex/base\article.cls
@@ -466,12 +466,12 @@ L3 programming layer <2023-08-11>
  ) 
 Here is how much of TeX's memory you used:
  9206 strings out of 475502
- 149901 string characters out of 5770691
+ 149747 string characters out of 5770691
  1923248 words of memory out of 5000000
  30331 multiletter control sequences out of 15000+600000
  565881 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,726b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,704b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mlibr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 Output written on main.pdf (10 pages, 199962 bytes).
 PDF statistics:

@@ -119,42 +119,14 @@ the global boiling, as environmentalists term it now (instead of global warming)
 % This project will help us to make a meaningful impact while gaining invaluable experience in the area of applied digital image processing.
 
 \section{Literature Review}
-This section entails a review of the previous work done in the scope of detecting deforestation using different types of satellite imagery. Most of the techniques use remote sensing, i.e., making use of the satellite imagery to detect image change and finally deforestation.
+This section entails a review of the previous work done in the scope of detecting deforestation using different types of satellite imagery. Most of the techniques use remote sensing, i.e., making use of the satellite imagery to detect image change and deforestation. While the methods in section 3.1 and 3.2 work on single band images, section 3.3 and onwards work on multi-band images which is the current state of the art procedure. \\
+Our project aims to bring classical techniques and compare their results with the more accurate methods to see if the classical methods can be used to have a fair estimate of the deforestation since the acquisition of multi-band satellite imagery and the pre-processing required is cumbersome and cannot raise public awareness.
 
 %Taken from Paper 3
 
-\subsection[3.1]{Otsu Method on color spaces}
-Image Segmentation is seperating or dividing of images into different clusters or regions based on common properties and/or differences between other regons properties. One property out of the many could be applied to separating images into regions is pixel intensity. 
-
-The method involves finding an optimal threshold that minimizes the intra-class variace of pixel intensities:
-\begin{equation}
-	\sigma^2_w(t) = w_1(t) \cdot \sigma_1^2(t) + w_2(t) \cdot \sigma_2^2(t)
-\end{equation}
-Where: 
-\begin{enumerate}
-	\item $t$ is the threshold value.
-	\item $\sigma^2_w(t)$ is the weighted sum of the variances of the two classes spearated by the threshold
-	\item $w_1(t)$ and $w_2(t)$ are the probabilities of the occurences of the two classes separated by the threshold.
-	\item $\sigma_1^2(t)$ and $\sigma_2^2(t)$ are the variances of the two classes separated by the threshold.
-\end{enumerate}
-The goal here, is to find the threshold value $t$ which effectively spearates the image into two classes, that minimizes the intra-class variance and maximizes the inter-class variance. \cite{5254345}
-
-So we normally can segment images into different regions through thresholding or separating the pixel levels into different scales. These different thresholding scales create different regions corresponding to the pixel intensity values. 
-\newline A simple example can be thresholding a gray scale image pixels into two regions, by transforming the gray scale image into binary image, which will consist of only two regions, namely either the black or white.
-
-If $G(x,y)$ is a threshold version of $f(x,y)$ at some global threshold $T$,:
-\[G(x,y) =
-\begin{cases}
-1 & \text{if } f(x,y) \geq T\\
-0 & \text{ otherwise}
-\end{cases}
-\]
-
-This method has been used with color spaces like HSV (Hue, Saturation, Intensity), and L*a*b* to identify areas of deforestation that we will further see in the methodology section.
-
 %Taken from Paper 3
 
-\subsection[3.2]{Image Clustering} 
+\subsection[3.1]{Image Clustering} 
 Content Based Image Clustering (CBIR) is a method used to group or classify objects into different classes which have similar properties. These classifying of images help us study different characteristics of 
 
 This classifying of images into groups help assist study different characteristics of the image like better flow, pattern changes and similarity of events or phenomenon. Further clustering of images gives clusters or regions with detailed and concise information and the content of the images which ease the task of asserting this regions of clusters. 
@@ -191,63 +163,91 @@ The input images of the fuzzy C-mean clustering, where Gray scale images and the
 
 The FCM algorithm continuously upgrades and moves this cluster centers iteratively to the ideal or right position. So by continuous moving of initial cluster centers, it precisely clusters the image into different regions and groups the accuracy of the membership grades of each groups [Cite3 in 23 in Doc]. 
 
+
+\subsection[3.2]{Otsu Method on color spaces}
+Image Segmentation is seperating or dividing of images into different clusters or regions based on common properties and/or differences between other regons properties. One property out of the many could be applied to separating images into regions is pixel intensity. 
+
+The method involves finding an optimal threshold that minimizes the intra-class variace of pixel intensities:
+\begin{equation}
+	\sigma^2_w(t) = w_1(t) \cdot \sigma_1^2(t) + w_2(t) \cdot \sigma_2^2(t)
+\end{equation}
+Where: 
+\begin{enumerate}
+	\item $t$ is the threshold value.
+	\item $\sigma^2_w(t)$ is the weighted sum of the variances of the two classes spearated by the threshold
+	\item $w_1(t)$ and $w_2(t)$ are the probabilities of the occurences of the two classes separated by the threshold.
+	\item $\sigma_1^2(t)$ and $\sigma_2^2(t)$ are the variances of the two classes separated by the threshold.
+\end{enumerate}
+The goal here, is to find the threshold value $t$ which effectively spearates the image into two classes, that minimizes the intra-class variance and maximizes the inter-class variance. \cite{5254345}
+
+So we normally can segment images into different regions through thresholding or separating the pixel levels into different scales. These different thresholding scales create different regions corresponding to the pixel intensity values. 
+\newline A simple example can be thresholding a gray scale image pixels into two regions, by transforming the gray scale image into binary image, which will consist of only two regions, namely either the black or white.
+
+If $G(x,y)$ is a threshold version of $f(x,y)$ at some global threshold $T$,:
+\[G(x,y) =
+\begin{cases}
+1 & \text{if } f(x,y) \geq T\\
+0 & \text{ otherwise}
+\end{cases}
+\]
+
+This method has been used with color spaces like HSV (Hue, Saturation, Intensity), and L*a*b* to identify areas of deforestation that we will further see in the methodology section.
+
+
 % paper 2 used
 
-\subsection[3.3]{Image ratioing}
-Ratioing is considered to be relatively rapid means of identifying areas of change. In ratioing two registered images from different dates with one or more bands in an image are ratioed, band by band. The data are compared on a pixel or pixel basis. 
+% \subsection[3.3]{Image ratioing}
+% Ratioing is considered to be relatively rapid means of identifying areas of change. In ratioing two registered images from different dates with one or more bands in an image are ratioed, band by band. The data are compared on a pixel or pixel basis. 
 
-\begin{equation}
-R(x) = \frac{I_{1}(x)}{I_{2}(x)}
-\end{equation}
+% \begin{equation}
+% R(x) = \frac{I_{1}(x)}{I_{2}(x)}
+% \end{equation}
 
-If the intensity of reflected energy is nearly the same in each image of R(x)=1, this indicates no change. In areas of change, the ratio value would be significantly greater than one or less than one, depending upon the nature of the change between the two dates. 
+% If the intensity of reflected energy is nearly the same in each image of R(x)=1, this indicates no change. In areas of change, the ratio value would be significantly greater than one or less than one, depending upon the nature of the change between the two dates. 
 
 % Paper 2 used
 
-\subsection[3.4]{Change Vector Analysis}
-The change vector analysis involves two variables, the magnitude of variation and the angle of the change vector.
+\subsection[3.3]{Change Vector Analysis}
+The change vector analysis \cite{MINU20151366} involves two variables, the magnitude of variation and the angle of the change vector.
 The change vector is obtained by subtracting the images represented in vector form.
 The first step of the CVA method is to find (Normalized Difference Vegetation Index) NDVI and (Bare Soil Index) BI values of both the images.
 
-$NDVI = (NIR - RED) / (NIR + RED)$
-\newline $BI = ((SWIR + RED) - (NIR + BLUE)) / ((SWIR + RED) + (NIR + BLUE))$
-
+\begin{equation} NDVI = (NIR - RED) / (NIR + RED) \end{equation}
+\begin{equation}
+	BI = ((SWIR + RED) - (NIR + BLUE)) / ((SWIR + RED) + (NIR + BLUE))
+\end{equation} 
 where $NIR$, $RED$, $SWIR$ and $BLUE$ are the spectral reflectance measurements acquired in the near-infrared, red, short wave infrared and blue regions.
 Change vector of each pixel includes two components NDVI and BI, which are the 2 axes in Cartesian coordinate system. The start point and finish point of the change vector are the locations of pixel in NDVI-BI space. The magnitude of vector represents the change intensity and the direction of vector represents the change dimension 
-Further calculations not only allow us to furhter divide the values into two different groups which do not only allow to see the land and forestation/plantation affected. [Cite 4 paper 4]
+Further calculations not only allow us to furhter divide the values into two different groups which do not only allow to see the land and forestation/plantation affected.
 
-\subsubsection[3.4.1]{Tasseled Cap Transformation Method}
-The tasseled cap transformation parameters of ETM+ imagery were used to calculate the Brightness, Greenness 
-and Wetness components of each image. The Tasseled cap transformation coefficients derived for Landsat 7 ETM+ 
-data by the EROS Data Center (Huang et al. 2002) are given in Table 2. Brightness is a weighted sum of all bands, 
-defined in the direction of the principal variation in soil reflectance. Greenness is a contrast between the near infrared and visible bands. It is strongly related to the amount of green vegetation in the scene. Wetness relates to 
-canopy and soil moisture. The brightness, greenness and wetness indexes are obtained for both the images.
+% \subsubsection[3.4.1]{Tasseled Cap Transformation Method}
+% The tasseled cap transformation parameters of ETM+ imagery were used to calculate the Brightness, Greenness 
+% and Wetness components of each image. The Tasseled cap transformation coefficients derived for Landsat 7 ETM+ 
+% data by the EROS Data Center (Huang et al. 2002) are given in Table 2. Brightness is a weighted sum of all bands, 
+% defined in the direction of the principal variation in soil reflectance. Greenness is a contrast between the near infrared and visible bands. It is strongly related to the amount of green vegetation in the scene. Wetness relates to 
+% canopy and soil moisture. The brightness, greenness and wetness indexes are obtained for both the images.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{./tasseledcap}
-	% \caption{Tasseled Cap Transformation}
-	\label{fig:tasseledcap}
-\end{figure}
+% \begin{figure}[h]
+% 	\centering
+% 	\includegraphics[width=0.7\linewidth]{./tasseledcap}
+% 	% \caption{Tasseled Cap Transformation}
+% 	\label{fig:tasseledcap}
+% \end{figure}
 
-\subsubsection[3.4.2]{Principal Component Analysis Method}
-The principal components transformation is a linear transformation which defines a new, orthogonal co-ordinate 
-system such that the data can be represented without correlation. A bi-temporal feature space is constructed by 
-placing the two image vectors in the same space. The transformation is found from the eigen vectors of the 
-covariance matrix of the original data. Each individual pixel is transformed by vector multiplication of its original 
-vector and the eigen vectors, resulting in coordinates in the new space. The transformed data is re-arranged back into
-wo images corresponding to the first and second principal components. The first component images contain no change pixels whereas the second component images contain change information between the different dates.
+% \subsubsection[3.4.2]{Principal Component Analysis Method}
+% The principal components transformation is a linear transformation which defines a new, orthogonal co-ordinate 
+% system such that the data can be represented without correlation. A bi-temporal feature space is constructed by 
+% placing the two image vectors in the same space. The transformation is found from the eigen vectors of the 
+% covariance matrix of the original data. Each individual pixel is transformed by vector multiplication of its original 
+% vector and the eigen vectors, resulting in coordinates in the new space. The transformed data is re-arranged back into
+% wo images corresponding to the first and second principal components. The first component images contain no change pixels whereas the second component images contain change information between the different dates.
 
-Therefore, using the Brightness, Greenness and Wetness components of each image, the change vector analysis was performed. 
+% Therefore, using the Brightness, Greenness and Wetness components of each image, the change vector analysis was performed. 
 
 %Paper 9 used here
 
-\subsection[3.5]{NDVI Method}
-The approach is implemented using MATLAB. All band 
-images were rotated 11 degrees with cubic interpolation. Then, 
-the region of interest was cropped. Moreover, the missing lines in the satellite images are removed using 
-the gray-level morphological closing operation. 
-\newline Landsat 7 has eight bands: blue, green, red, near-infrared 1, 
+\subsection[3.4]{NDVI Method}
+This method entails the use of multi-band satellite imagery to detect and produce results for areas of vegetation \cite{isprs-annals-IV-4-W4-379-2017} where the Landsat 8 has eight bands: blue, green, red, near-infrared 1, 
 near-infrared 2, thermal, mid-infrared, panchromatic. All of the 
 bands have 30 meters resolution, except thermal with 60 and 
 panchromatic with 15 meters of resolution (GIS Geography, 
@@ -287,7 +287,7 @@ Vegetation Ratio = \frac{Total Number of Pixels with Value 1}{Total Number of Pi
 
 %Paper 1 used here
 
-\subsection[3.6]{Wavelength Method}
+\subsection[3.5]{Wavelength Method}
 The data was processed and the analysis was by determining the wavelengths of certain frames from Landsat-7 and four frames from Landsat-8. The bands were combined for each frame and the null values were eliminated using the Copy Raster toolset. Finally, mosaicing was done on the frames for each year separately using the Mosaic to New Raster tool.
 \newline The spatial-temporal variability
 of normalized difference vegetation index NDVI was assessed to study deforestation using harmonic

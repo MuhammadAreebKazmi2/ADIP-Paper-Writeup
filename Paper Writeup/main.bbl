@@ -29,17 +29,34 @@ S.~P. Thomas, ``Global boiling: Implications for mental health,'' \emph{Issues
   \url{https://doi.org/10.1080/01612840.2023.2244338}
 \BIBentrySTDinterwordspacing
 
-\bibitem{5254345}
-D.~Liu and J.~Yu, ``Otsu method and k-means,'' in \emph{2009 Ninth
-  International Conference on Hybrid Intelligent Systems}, vol.~1, 2009, pp.
-  344--349.
-
 \bibitem{BEZDEK1984191}
 \BIBentryALTinterwordspacing
 J.~C. Bezdek, R.~Ehrlich, and W.~Full, ``Fcm: The fuzzy c-means clustering
   algorithm,'' \emph{Computers \& Geosciences}, vol.~10, no.~2, pp. 191--203,
   1984. [Online]. Available:
   \url{https://www.sciencedirect.com/science/article/pii/0098300484900207}
+\BIBentrySTDinterwordspacing
+
+\bibitem{5254345}
+D.~Liu and J.~Yu, ``Otsu method and k-means,'' in \emph{2009 Ninth
+  International Conference on Hybrid Intelligent Systems}, vol.~1, 2009, pp.
+  344--349.
+
+\bibitem{MINU20151366}
+\BIBentryALTinterwordspacing
+S.~Minu and A.~Shetty, ``A comparative study of image change detection
+  algorithms in matlab,'' \emph{Aquatic Procedia}, vol.~4, pp. 1366--1373,
+  2015. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S2214241X15001789}
+\BIBentrySTDinterwordspacing
+
+\bibitem{isprs-annals-IV-4-W4-379-2017}
+\BIBentryALTinterwordspacing
+C.~Telkenaroglu and M.~Dikmen, ``Deforestation due to urbanization: A case
+  study for trabzon, turkey,'' \emph{ISPRS Annals of the Photogrammetry, Remote
+  Sensing and Spatial Information Sciences}, vol. IV-4/W4, pp. 379--382, 2017.
+  [Online]. Available:
+  \url{https://isprs-annals.copernicus.org/articles/IV-4-W4/379/2017/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

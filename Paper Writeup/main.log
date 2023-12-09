@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  9 DEC 2023 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  9 DEC 2023 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,44 +424,38 @@ Package pdftex.def Info: ./logo.png  used on input line 38.
 (pdftex.def)             Requested size: 128.0387pt x 135.6748pt.
 [1
 
-{C:/Users/mlibr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>] [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 130.
+{C:/Users/mlibr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>] [2] [3]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
  (D:\Software setups\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 130.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
  (D:\Software setups\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3] [4] [5] [6]
-<./tasseledcap.png, id=31, 341.77687pt x 80.55093pt>
-File: ./tasseledcap.png Graphic file (type png)
-<use ./tasseledcap.png>
-Package pdftex.def Info: ./tasseledcap.png  used on input line 228.
-(pdftex.def)             Requested size: 298.75264pt x 70.41551pt.
- [7 <./tasseledcap.png>] [8] [9]
-<./wavelength-9.png, id=44, 426.09187pt x 209.28188pt>
+) [4] [5] [6] [7]
+<./wavelength-9.png, id=35, 426.09187pt x 209.28188pt>
 File: ./wavelength-9.png Graphic file (type png)
 <use ./wavelength-9.png>
 Package pdftex.def Info: ./wavelength-9.png  used on input line 306.
 (pdftex.def)             Requested size: 298.75264pt x 146.74538pt.
- (main.bbl [10 <./wavelength-9.png>]) [11] (main.aux)
+ [8] (main.bbl [9 <./wavelength-9.png>]) [10] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9235 strings out of 475502
- 150240 string characters out of 5770691
+ 9225 strings out of 475502
+ 150017 string characters out of 5770691
  1923248 words of memory out of 5000000
- 30355 multiletter control sequences out of 15000+600000
+ 30345 multiletter control sequences out of 15000+600000
  566502 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,9n,77p,646b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mlibr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (11 pages, 218914 bytes).
+Output written on main.pdf (10 pages, 190175 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

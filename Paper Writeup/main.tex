@@ -309,6 +309,20 @@ in an area and is used to distinguish forested from deforested areas.
 \end{figure}
 
 \section{Methodology}
+As undergraduate students with limited knowledge and expertise, we were not able to come up with a novel idea. However, keeping in mind the techniques learned in the course of Applied Digital Image Processing, we implemented the methods that have been used for detecting deforestation in the papers cited above.
+
+\subsection[4.1]{Data Collection}
+We acquired the satellite images from Google Earth Pro that is available for free from Google. For the multiple band images, we used Landsat 8 images from the USGS Earth Explorer website. The images were downloaded in the GeoTIFF format and were used for further processing. The images taken and uploaded on our Github repository are from the rural and urban areas of Sindh. 
+
+\subsection[4.2]{Feature Extraction}
+When it comes to images obtained from Google Earth Pro, we applied Fuzzy C-Mean Clustering (refer to Section 3.1) and Otsu thresholding (refer to section 3.2) separately. 
+
+For the multi-band images, we used the NDVI method (refer to section 3.4) and the Wavelength method (refer to section 3.5) separately.
+
+\subsection[4.3]{Classification}
+For comparing the results produced by the methods above, we used accuracy parameters and visual observation to determine the best method. The accuracy parameters used were precision, recall, and fScore. The visual observation was done by comparing the results produced by the methods with the ground truth images.
+
+We also used parameters like timing the execution or running time of our programs to see which program runs faster. 
 
 \section{Results}
 

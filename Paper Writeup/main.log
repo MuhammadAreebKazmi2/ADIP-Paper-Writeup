@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  10 DEC 2023 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.3)  11 DEC 2023 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,7 +344,50 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [IEEEtran].
 
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `fig:subfig1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig1' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:overall' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig1' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subfig2' multiply defined.
+
+
+LaTeX Warning: Label `fig:overall' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -424,52 +467,118 @@ Package pdftex.def Info: ./logo.png  used on input line 38.
 (pdftex.def)             Requested size: 128.0387pt x 135.6748pt.
 [1
 
-{C:/Users/mlibr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>] [2] [3]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154.
+{C:/Users/mlibr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>] [2] [3] [4]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 157.
  (D:\Software setups\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 157.
  (D:\Software setups\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4]
-Overfull \hbox (0.32932pt too wide) in paragraph at lines 224--225
+) [5]
+Overfull \hbox (0.32932pt too wide) in paragraph at lines 227--228
 []\OT1/cmr/m/n/12 The ver-sa-til-ity of NDVI ex-tends to pat-tern mon-i-tor-ing, ex-em-pli-fied by the Mimbo
  []
 
-[5] [6] [7] [8] [9] [10] [11]
-<fig1a.PNG, id=48, 234.1247pt x 135.50626pt>
+[6] [7] [8] [9] [10] [11] [12]
+<fig1a.PNG, id=51, 234.1247pt x 135.50626pt>
 File: fig1a.PNG Graphic file (type png)
 <use fig1a.PNG>
-Package pdftex.def Info: fig1a.PNG  used on input line 400.
+Package pdftex.def Info: fig1a.PNG  used on input line 403.
 (pdftex.def)             Requested size: 211.3883pt x 122.35353pt.
-<fig1b.PNG, id=50, 234.1247pt x 134.00063pt>
+<fig1a_ans.PNG, id=53, 237.13594pt x 134.00063pt>
+File: fig1a_ans.PNG Graphic file (type png)
+<use fig1a_ans.PNG>
+Package pdftex.def Info: fig1a_ans.PNG  used on input line 409.
+(pdftex.def)             Requested size: 211.3883pt x 119.4544pt.
+<fig1b.PNG, id=54, 234.1247pt x 134.00063pt>
 File: fig1b.PNG Graphic file (type png)
 <use fig1b.PNG>
-Package pdftex.def Info: fig1b.PNG  used on input line 406.
+Package pdftex.def Info: fig1b.PNG  used on input line 415.
 (pdftex.def)             Requested size: 211.3883pt x 120.99405pt.
- [12]
+<fig1b_ans.PNG, id=55, 237.13594pt x 135.50626pt>
+File: fig1b_ans.PNG Graphic file (type png)
+<use fig1b_ans.PNG>
+Package pdftex.def Info: fig1b_ans.PNG  used on input line 421.
+(pdftex.def)             Requested size: 211.3883pt x 120.79659pt.
+ [13] [14 <./fig1a.PNG> <./fig1a_ans.PNG> <./fig1b.PNG> <./fig1b_ans.PNG>]
+<fig2a.jpg, id=68, 235.63031pt x 133.24782pt>
+File: fig2a.jpg Graphic file (type jpg)
+<use fig2a.jpg>
+Package pdftex.def Info: fig2a.jpg  used on input line 462.
+(pdftex.def)             Requested size: 211.3883pt x 119.53967pt.
+<fig2red.jpeg, id=69, 234.1247pt x 130.98938pt>
+File: fig2red.jpeg Graphic file (type jpg)
+<use fig2red.jpeg>
+Package pdftex.def Info: fig2red.jpeg  used on input line 468.
+(pdftex.def)             Requested size: 211.3883pt x 118.27509pt.
+<Figure 3.jpg, id=70, 372.64218pt x 211.54031pt>
+File: Figure 3.jpg Graphic file (type jpg)
+<use Figure 3.jpg>
+Package pdftex.def Info: Figure 3.jpg  used on input line 478.
+(pdftex.def)             Requested size: 341.44757pt x 170.72049pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./fig1a.PNG> <./fig1b.PNG>] (main.bbl [14]) [15] (main.aux)
+[15] [16 <./fig2a.jpg> <./fig2red.jpeg> <./Figure 3.jpg>]
+<ex1_cluster.PNG, id=77, 234.8775pt x 247.67531pt>
+File: ex1_cluster.PNG Graphic file (type png)
+<use ex1_cluster.PNG>
+Package pdftex.def Info: ex1_cluster.PNG  used on input line 492.
+(pdftex.def)             Requested size: 187.89867pt x 128.03606pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--495
+[][]
+ []
+
+<ex1_NDVI.PNG, id=78, 272.51813pt x 277.035pt>
+File: ex1_NDVI.PNG Graphic file (type png)
+<use ex1_NDVI.PNG>
+Package pdftex.def Info: ex1_NDVI.PNG  used on input line 498.
+(pdftex.def)             Requested size: 187.89632pt x 128.0379pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--501
+[][]
+ []
+
+<ex1_sat.PNG, id=79, 171.64125pt x 181.42781pt>
+File: ex1_sat.PNG Graphic file (type png)
+<use ex1_sat.PNG>
+Package pdftex.def Info: ex1_sat.PNG  used on input line 504.
+(pdftex.def)             Requested size: 187.89713pt x 128.0395pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
+[][]
+ []
+
+<example1.PNG, id=80, 231.86626pt x 242.40562pt>
+File: example1.PNG Graphic file (type png)
+<use example1.PNG>
+Package pdftex.def Info: example1.PNG  used on input line 510.
+(pdftex.def)             Requested size: 187.90262pt x 128.0416pt.
+(main.bbl [17 <./ex1_cluster.PNG> <./ex1_NDVI.PNG> <./ex1_sat.PNG> <./example1.PNG>] [18]) [19] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9264 strings out of 475502
- 150626 string characters out of 5770691
- 1924248 words of memory out of 5000000
- 30383 multiletter control sequences out of 15000+600000
+ 9335 strings out of 475502
+ 151930 string characters out of 5770691
+ 1926248 words of memory out of 5000000
+ 30454 multiletter control sequences out of 15000+600000
  566971 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,1232b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,9n,77p,1467b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\mlibr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Software setups/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (15 pages, 314043 bytes).
+Output written on main.pdf (19 pages, 1273392 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 145 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

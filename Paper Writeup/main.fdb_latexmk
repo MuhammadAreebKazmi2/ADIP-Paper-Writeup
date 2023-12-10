@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1702229473 "main.aux" "main.bbl" "main" 1702229474 0
-  "./references.bib" 1702229471 2879 98057d77f6e6c5108a9be07bd7950631 ""
+["bibtex main"] 1702235268 "main.aux" "main.bbl" "main" 1702235276 0
+  "./references.bib" 1702233111 7433 981c533c166c9204a47628274df7d4ca ""
   "D:/Software setups/MikTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1702229439 2924 80c643adb287620f462b112a8b4f65b2 "pdflatex"
+  "main.aux" 1702235272 4789 28fafa195773f48ed97412558d7e2020 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1702229437 "d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex" "main.pdf" "main" 1702229474 0
+["pdflatex"] 1702235269 "d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex" "main.pdf" "main" 1702235276 0
   "C:/Users/mlibr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1702111688 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/mlibr/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1693842850 14064 7a3dfc7c0806b2440ac863b8b7171bd4 ""
   "C:/Users/mlibr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693681939 24111742 763981b63d570288c5161c857500252e ""
@@ -110,13 +110,22 @@
   "D:/Software setups/MikTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/Software setups/MikTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "D:/Software setups/MikTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex" 1702229284 37847 59e45df94333d23b935d3067b14ead27 ""
+  "Figure 3.jpg" 1702233562 71092 d2b285b693bdb9dda6cfb4c1af63d34d ""
+  "d:/Habib University/Github/ADIP-Paper-Writeup/Paper Writeup/main.tex" 1702235258 43052 cc85132f6384bfcf4eca3c2de95f6236 ""
+  "ex1_NDVI.PNG" 1702212953 108251 13908836cafe1ccabb1da5410406abe9 ""
+  "ex1_cluster.PNG" 1702212698 215672 297b0973544bdafa13c2ea47d9e02e08 ""
+  "ex1_sat.PNG" 1702212788 27558 2ef1da4521904e5fb6018e53c27f9ba3 ""
+  "example1.PNG" 1702212386 239297 2209c768b63d9b8045eb3e425eab99e2 ""
   "fig1a.PNG" 1702211916 74437 366e3c07e5318c11b577bffe76c4ed54 ""
+  "fig1a_ans.PNG" 1702211935 164581 7b865142db141627fc2d67fa5cfe00ea ""
   "fig1b.PNG" 1702211999 57189 dc771d5dd3cc2695aee7866b7502eeca ""
+  "fig1b_ans.PNG" 1702212021 140959 d85eb6de921e678b571ffa077ef66587 ""
+  "fig2a.jpg" 1702234082 22752 5a7ad12fccb06fcd8c533880c4edf307 ""
+  "fig2red.jpeg" 1702234278 25029 d41e92b3933c2fd185e9c1ff62e6ff23 ""
   "logo.png" 1698597147 10447 516533059b8843bd68f9ce1090e12ec8 ""
-  "main.aux" 1702229439 2924 80c643adb287620f462b112a8b4f65b2 "pdflatex"
-  "main.bbl" 1702229474 2025 b05f7541e48b201397357ca8c5c0c80e "bibtex main"
-  "main.tex" 1702229284 37847 59e45df94333d23b935d3067b14ead27 ""
+  "main.aux" 1702235272 4789 28fafa195773f48ed97412558d7e2020 "pdflatex"
+  "main.bbl" 1702235269 2928 f551a191b5793a6397c6a6c655bc9ed9 "bibtex main"
+  "main.tex" 1702235258 43052 cc85132f6384bfcf4eca3c2de95f6236 ""
   (generated)
   "main.aux"
   "main.log"

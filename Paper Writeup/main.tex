@@ -84,6 +84,9 @@
 % This command causes the title to be created in the document
 \newpage
 \section{Abstract}
+Satellite imagery stands as a pivotal tool, progressively evolving to provide insightful information and monitor various topological transformations. Despite its substantial capabilities, there is an underutilization due to a lack of guidance on effective tool utilization. This research addresses this gap by offering insights into selecting suitable platforms and providing essential information about the monitored area, facilitating efficient tracking of deforestation or afforestation. Instead of relying on the complex and data-intensive Normalized Difference Vegetation Index (NDVI) method, this study adopts a pragmatic approach using clustering methods.
+
+Through experimentation, even with a simple screenshot of the targeted area, the proposed method yields accurate approximations, proving effective in tracking deforestation activities. This research establishes a streamlined and accessible methodology for monitoring environmental changes, fostering sustainable practices through a straightforward and reliable clustering approach.
 
 \section{Introduction}
 % this para is good. 
@@ -219,9 +222,9 @@ The Normalized Difference Vegetation Index (NDVI) is widely employed for vegetat
 
 The utilization of Surface Reflectance products further refines this process by providing an estimate of spectral reflectance at ground level, effectively negating the impact of atmospheric scattering or absorption that could otherwise distort measurements. This approach ensures the accuracy and reliability of NDVI data in discerning variations in vegetation over time. The Landsat were further the preferred choice as among the many other satellites with the same idea developed for monitoring the land changes, Landsat is the only of the few remaining satellites which has the data for such an extended time. 
 
-Originating in the 1970s, the utilization of the Normalized Difference Vegetation Index (NDVI) has undergone a transformative evolution. Initially designed for vegetation detection, it has progressed to become an invaluable tool for monitoring and predicting vegetation health and growth. This comprehensive methodology has found substantial application in environmental monitoring, notably in the Brazilian forest [3]. Employing the Random Forest model, historical NDVI data has been meticulously analyzed to not only comprehend the past growth patterns of the Brazilian forest but also to project future developments. Using the GEEE platforms to extract the utilize the data available, the data was then processed and checked against the Random Forest algorithm to monitor the changes over the years, and see the future vegetation prospects based on this idea.  
+Originating in the 1970s, the utilization of the Normalized Difference Vegetation Index (NDVI) has undergone a transformative evolution. Initially designed for vegetation detection, it has progressed to become an invaluable tool for monitoring and predicting vegetation health and growth. This comprehensive methodology has found substantial application in environmental monitoring, notably in the Brazilian forest \cite{su11010098}. Employing the Random Forest model, historical NDVI data has been meticulously analyzed to not only comprehend the past growth patterns of the Brazilian forest but also to project future developments. Using the GEEE platforms to extract the utilize the data available, the data was then processed and checked against the Random Forest algorithm to monitor the changes over the years, and see the future vegetation prospects based on this idea.  
 
-The versatility of NDVI extends to pattern monitoring, exemplified by the Mimbo forests [4]. In this context, the NDVI method served as a robust metric for quantifying deforestation. Incorporating regression analysis into the evaluation of identified patterns has not only facilitated a nuanced understanding of past deforestation trends but also augments the capability to predict future vegetation dynamics within the Mimbo region. 
+The versatility of NDVI extends to pattern monitoring, exemplified by the Mimbo forests \cite{ijgi9100580}. In this context, the NDVI method served as a robust metric for quantifying deforestation. Incorporating regression analysis into the evaluation of identified patterns has not only facilitated a nuanced understanding of past deforestation trends but also augments the capability to predict future vegetation dynamics within the Mimbo region. 
 
  
 
@@ -390,7 +393,7 @@ This script effectively processes satellite imagery, calculates NDVI, and visual
 
 
 \section{Experimental Results}
-Each of our code were executed and timed appropiately. Where analysis was done not by only varying the parameter values but also working principle of each code with varying image types and the type of landscape provided to it as well. Each method would be discussed and the type of result that it had provided with. 
+We used the methods and implemented them on the images of Punhal Khan Jamali, Each of our code were executed and timed appropiately. Where analysis was done not by only varying the parameter values but also working principle of each code with varying image types and the type of landscape provided to it as well. Each method would be discussed and the type of result that it had provided with. 
 
 The Clustering method had a controllable factor of the number of clusters which would be required to be taken for.  Increasing the number of clusters would only increase the amount of variations of the classes of pixels to be grouped and formed for the image. This would lead to an inconsistency as the code works on the idea of the green pixels being seperately and would lead to the different shades of green being grouped in different clusters. Where if we were to take this for different images, each would lead to a different normalized binary value. Thus, standardization would not only be hard but also difficult to maintain without using a machine learning model where for a large data set it would be trained for and then checked against each. Figure 1a below shows when we use the number of clusters to be 6 and followed by 1b showing the same image but for 3 number of clusters. Thus, after more trial and errors, 3 was found to be the closest number of clusters for which the most accurate clustering method could be deployed with the best vegetation detection possible.  
 
@@ -398,16 +401,28 @@ The Clustering method had a controllable factor of the number of clusters which 
     \centering
     \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\linewidth]{fig1a.PNG} % Replace 'image1' with your actual filename
-        \caption{Caption for Figure 1a}
+        \caption{Figure 1a.1: For 6 number of clusters}
         \label{fig:subfig1}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{fig1b.PNG} % Replace 'image2' with your actual filename
-        \caption{Caption for Figure 1b}
+        \includegraphics[width=\linewidth]{fig1a_ans.PNG} % Replace 'image2' with your actual filename
+        \caption{Figure 1a.2: Impact on the real image}
         \label{fig:subfig2}
     \end{subfigure}
-    \caption{Overall caption for both figures.}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{fig1b.PNG} % Replace 'image1' with your actual filename
+        \caption{Figure 1b.1: For 3 number of clusters}
+        \label{fig:subfig3}
+    \end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{fig1b_ans.PNG} % Replace 'image1' with your actual filename
+        \caption{Figure 1b.2: Impact on the real image}
+        \label{fig:subfig4}
+    \end{subfigure}
+    \caption{Changing the number of clusters in FCM}
     \label{fig:overall}
 \end{figure}
 
@@ -436,14 +451,71 @@ Thus this results in the following analysis for each of the methods below where 
 	\label{tab:methods_time}
 \end{table}
 	
-It is observable based on the table 1 above where the time taken for each NDVI and Clustering is almost equal, clustering would still be giving an estimate as compared to the NDVI method. However based on the technique and idea used to get information and the idea of automation, clustering would give a good estimate while having the idea of getting incorporated with automation tasks which involve only taking the screen shot of the map as compared to NDVI where automation would also be complicated as the selected files would have to contain the required bands. Thus, both the ideas could also be used to track forestation as seen in fig 4 where the red area identifies the area of deforestation and blue identifies the area of afforestation. Where with some additional changes, it could further be improved to the extent where the area of deforestation and afforestation could also be found. 
+It is observable based on the table 1 above where the time taken for each NDVI and Clustering is almost equal, clustering would still be giving an estimate as compared to the NDVI method. However based on the technique and idea used to get information and the idea of automation, clustering would give a good estimate while having the idea of getting incorporated with automation tasks which involve only taking the screen shot of the map as compared to NDVI where automation would also be complicated as the selected files would have to contain the required bands. Thus, both the ideas could also be used to track forestation as seen in Figure 3 where the red area identifies the area of deforestation and blue identifies the area of afforestation. Where with some additional changes, it could further be improved to the extent where the area of deforestation and afforestation could also be found. 
 
 The Otsu method would not be regarded in this case as the idea of Otsu revolves around the varying image properties where it was for varying images different channels were being to identify the area of forestation or not and relied heavily on the user identifying which would be more appropiate rather than the idea of automating it for any image it would be given. Thus, even though it would be useful in some aspects but in the larger aspect it would not be useful to us.  
  
 % add system specifications on which the results are run
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{fig2a.jpg} % Replace 'image1' with your actual filename
+        \caption{Deforested area}
+        \label{fig:subfig1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{fig2red.jpeg} % Replace 'image2' with your actual filename
+        \caption{Amount of vegetation detected}
+        \label{fig:subfig2}
+    \end{subfigure}
+    \caption{Blur image being used}
+    \label{fig:overall}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth, height=6cm]{Figure 3.jpg} % Replace 'your_image_filename' with the actual filename of your image
+    \caption{afforestation: Blue, deforestation: Red}
+    \label{fig:your_label}
+\end{figure}
+
+% add system specifications on which the results are run
 
 
 \section{Conclusion}
+Upon analyzing the outcomes derived from each experimental result, we can confidently assert the efficacy of Fuzzy C-Means (FCM) as a robust method for vegetation identification within a given area. Notably, this approach stands out due to its versatility in accommodating diverse image formats such as JPEG, TIFF, PNG, and others, setting it apart from methods like Normalized Difference Vegetation Index (NDVI) that necessitate images from each band. Our comprehensive examination leads us to conclude that FCM clustering serves as a compelling alternative, offering valuable insights into the extent of forestation. This approach eliminates the need for intricate satellite selection and the handling of large data files associated with extremely high-resolution band-specific images. The simplicity and accuracy of FCM make it a practical choice for assessing vegetation cover in diverse environmental contexts. However, there are limitations to this approach, firstly being the less accurate dataset as we use Google Earth images instead of the multi-band satellite images that are dedicated to the identfication of the topology and Earth's natural resources. Secondly, we could not come up with a way of quantfying the accuracy of the classical methods with the NDVI method which uses multi-band imagery, and thus a quantitative comparison becomes virtually impossible. 
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.40\textwidth}
+        \includegraphics[width=\linewidth, height=4.5cm]{ex1_cluster.PNG} % Replace 'image1' with your actual filename
+        % \caption{Caption for Figure 1a}
+        \label{fig:subfig1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.40\textwidth}
+        \includegraphics[width=\linewidth, height=4.5cm]{ex1_NDVI.PNG} % Replace 'image2' with your actual filename
+        % \caption{Amount of vegetation detected}
+        \label{fig:subfig2}
+    \end{subfigure}
+	\hfill
+    \begin{subfigure}{0.40\textwidth}
+        \includegraphics[width=\linewidth, height=4.5cm]{ex1_sat.PNG} % Replace 'image2' with your actual filename
+        %  \caption{Amount of vegetation detected}
+        \label{fig:subfig2}
+    \end{subfigure}
+	\hfill
+    \begin{subfigure}{0.40\textwidth}
+        \includegraphics[width=\linewidth, height=4.5cm]{example1.PNG} % Replace 'image2' with your actual filename
+        % \caption{Amount of vegetation detected}
+        \label{fig:subfig2}
+    \end{subfigure}
+    \caption{Vegetation detected using different methods}
+	
+    \label{fig:overall}
+\end{figure}
+
 
 \section{Acknowledgements}
 We thank our course instructor, Dr. Muhammad Mobeen Movania, for his guidance and support throughout the course. 
@@ -451,5 +523,5 @@ We thank our course instructor, Dr. Muhammad Mobeen Movania, for his guidance an
 \bibliographystyle{IEEEtran}
 \bibliography{references.bib}
 
-Citations for NDVI and intext too. Also, cite the 3rd paper and others
+% Citations for NDVI and intext too. Also, cite the 3rd paper and others
 \end{document}

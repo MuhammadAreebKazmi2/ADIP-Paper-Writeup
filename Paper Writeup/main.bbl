@@ -41,6 +41,24 @@ J.~C. Bezdek, R.~Ehrlich, and W.~Full, ``Fcm: The fuzzy c-means clustering
 D.~Liu and J.~Yu, ``Otsu method and k-means,'' \emph{2009 Ninth International
   Conference on Hybrid Intelligent Systems}, vol.~1, pp. 344--349, 2009.
 
+\bibitem{su11010098}
+\BIBentryALTinterwordspacing
+V.~Chiteculo, A.~Abdollahnejad, D.~Panagiotidis, P.~Surový, and R.~P. Sharma,
+  ``Defining deforestation patterns using satellite images from 2000 and 2017:
+  Assessment of forest management in miombo forests—a case study of huambo
+  province in angola,'' \emph{Sustainability}, vol.~11, no.~1, p.~98, 2019.
+  [Online]. Available: \url{https://www.mdpi.com/2071-1050/11/1/98}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ijgi9100580}
+\BIBentryALTinterwordspacing
+M.~A. Brovelli, Y.~Sun, and V.~Yordanov, ``Monitoring forest change in the
+  amazon using multi-temporal remote sensing data and machine learning
+  classification on google earth engine,'' \emph{ISPRS International Journal of
+  Geo-Information}, vol.~9, no.~10, p. 580, 2020. [Online]. Available:
+  \url{https://www.mdpi.com/2220-9964/9/10/580}
+\BIBentrySTDinterwordspacing
+
 \bibitem{adip_group_project}
 \BIBentryALTinterwordspacing
 M.~A. Kazmi and S.~S. Patel. (2023) Adip group project implementation.
